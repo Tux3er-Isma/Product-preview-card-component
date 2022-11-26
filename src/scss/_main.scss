@@ -1,0 +1,121 @@
+/*SCSS Files*/
+@use 'variables';
+
+/*Main Styles*/
+.main{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+
+    .main__card{
+        display: inline-flex;
+        background-color: #fff;
+        height: 450px;
+        border-radius: 10px;
+
+        .main__card__parts{
+
+            .main__card__parts__subtitle{
+                font-family: variables.$montserrat;
+                font-size: 12.5px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            .main__card__parts__title{
+                font-family: variables.$fraunces;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            .main__card__parts__text{
+                font-family: variables.$montserrat;
+                margin-bottom: 20px;
+            }
+
+            .main__card__parts__prices{
+                display: flex;
+                margin-bottom: 20px;
+
+                .main__card__parts__prices__reduced-price{
+                    font-family: variables.$fraunces;
+                    color: variables.$dark-cyan;
+                }
+
+                .main__card__parts__prices__price{
+                    text-decoration: line-through;
+                    font-family: variables.$fraunces;
+                    color: variables.$dark-graish-blue;
+                    font-size: 13px;
+                    font-weight: 300;
+                    position: relative;
+                    left: 20px;
+                }
+            }
+
+            .main__card__parts__buy{
+                background-color: variables.$dark-cyan;
+                color: #fff;
+                border: 2px solid variables.$dark-cyan;
+                width: 250px;
+                padding: 10px;
+                border-radius: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .main__card__parts__thumbnail--desktop{
+                height: 450px;
+                width: 350px;
+                border-radius: 10px 0px 0px 10px;
+            }
+
+            .main__card__parts__thumbnail--mobile{
+                display: none;
+            }
+        }
+
+        .main__card__part--two{
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+    }
+}
+
+/*Main Mobile Responsive Styles*/
+@media only screen and (max-width: 480px){
+    .main{
+        left: 15px;
+
+            .main__card{
+                flex-direction: column;
+                height: 100%;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+            
+                .main__card__parts{
+                
+                    .main__card__parts__thumbnail--desktop{
+                        display: none;
+                    }
+
+                    .main__card__parts__thumbnail--mobile{
+                        display: block;
+                        width: 350px;
+                        height: 250px;
+                        border-radius: 10px 10px 0px 0px;
+                    }
+
+                    .main__card__parts__buy{
+                        width: 300px;
+                        text-align: center;
+                        position: relative;
+                        right: 10px;
+                    }
+                }
+        }
+    }
+}
