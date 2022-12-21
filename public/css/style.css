@@ -1,0 +1,66 @@
+/*Variables*/
+/*Color Variables*/
+/*Font Variables*/
+/*SCSS Files*/
+/*Main Styles*/
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__card {
+  display: inline-flex;
+}
+.main .main__card .main__card__img-container .main__card__img-container__img {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px 0px 0px 10px;
+}
+.main .main__card .main__card__text-container {
+  background-color: #fff;
+  height: 500px;
+  width: 350px;
+  border-radius: 0px 10px 10px 0px;
+}
+.main .main__card .main__card__text-container .main__card__text-container__subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+}
+.main .main__card .main__card__text-container .main__card__text-container__title {
+  font-family: "Fraunces", sans-serif;
+}
+.main .main__card .main__card__text-container .main__card__text-container__text {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228deg, 12%, 48%);
+}
+.main .main__card .main__card__text-container .main__card__text-container__price {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158deg, 36%, 37%);
+}
+.main .main__card .main__card__text-container .main__card__text-container__price .main__card__text-container__price__past-price {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+}
+.main .main__card .main__card__text-container .main__card__text-container__btn {
+  background-color: hsl(158deg, 36%, 37%);
+  color: #fff;
+  border: 2px solid hsl(158deg, 36%, 37%);
+}
+
+/*SCSS File*/
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+/*# sourceMappingURL=style.css.map */

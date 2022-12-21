@@ -1,0 +1,61 @@
+/*SCSS Files*/
+@use 'variables';
+
+/*Main Styles*/
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main__card{
+        display: inline-flex;
+
+        .main__card__img-container{
+
+            .main__card__img-container__img{
+                height: 500px;
+                width: 350px;
+                border-radius: 10px 0px 0px 10px;
+            }
+        }
+
+        .main__card__text-container{
+            background-color: variables.$white;
+            height: 500px;
+            width: 350px;
+            border-radius: 0px 10px 10px 0px;
+
+            .main__card__text-container__subtitle{
+                font-family: variables.$montserrat;
+                color: variables.$dark-graish-blue;
+            }
+
+            .main__card__text-container__title{
+                font-family: variables.$fraunces;
+            }
+
+            .main__card__text-container__text{
+                font-family: variables.$montserrat;
+                color: variables.$dark-graish-blue;
+            }
+
+            .main__card__text-container__price{
+                font-family: variables.$fraunces;
+                color: variables.$dark-cyan;
+
+                .main__card__text-container__price__past-price{
+                    color: variables.$dark-graish-blue;
+                    text-decoration: line-through;
+                    font-family: variables.$montserrat;
+                }
+            }
+
+            .main__card__text-container__btn{
+                background-color: variables.$dark-cyan;
+                color: variables.$white;
+                border: 2px solid variables.$dark-cyan;
+            }
+        }
+    }
+}
