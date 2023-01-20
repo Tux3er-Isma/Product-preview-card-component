@@ -1,0 +1,14 @@
+/*SCSS Files*/
+@use 'variables';
+@use 'mixins';
+
+/*Footer Styles*/
+.footer{
+    display: flex;
+    justify-content: center;
+
+    .Tux3er{
+        font-family: variables.$montserrat;
+        text-align: center;
+    }
+}

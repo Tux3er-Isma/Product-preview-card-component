@@ -1,6 +1,7 @@
 /*SCSS File*/
 @use 'variables';
 @use 'main';
+@use 'footer';
 @use 'mixins';
 
 /*General Styles*/
@@ -11,7 +12,17 @@
 }
 
 body{
-    overflow: hidden;
     min-height: 100vh;
     background-color: variables.$cream;
+}
+
+br{
+    display: block;
+}
+
+/*Responsive Mobile General Styles*/
+@media only screen and (max-width: 480px){
+    br{
+        display: none;
+    }
 }

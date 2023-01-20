@@ -18,6 +18,9 @@
                 height: 500px;
                 width: 350px;
                 border-radius: 10px 0px 0px 10px;
+                background: url(/public/assets/img/image-product-desktop.jpg);
+                background-size: 350px 500px;
+                background-repeat: no-repeat;
             }
         }
 
@@ -122,6 +125,34 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+/*Responsive Mobile Main Styles*/
+@media only screen and (max-width: 480px){
+    .main{
+
+        .main__card{
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .main__card__img-container{
+                margin-top: 40px;
+                height: 300px;
+                width: 200px;
+
+                .main__card__img-container__img{
+                    height: 300px;
+                    width: 350px;
+                    background-size: 350px 400px;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+
+            .main__card__text-container{
+                border-radius: 0px 0px 10px 10px;
             }
         }
     }
