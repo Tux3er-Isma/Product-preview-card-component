@@ -1,0 +1,8 @@
+/*SCSS Files*/
+@use 'variables';
+
+/*Mixins*/
+/*Main Mixins*/
+@mixin text-container-childs(){
+    margin-left: 40px;
+}

@@ -1,5 +1,6 @@
 /*SCSS Files*/
 @use 'variables';
+@use 'mixins';
 
 /*Main Styles*/
 .main{
@@ -31,26 +32,42 @@
                 color: variables.$dark-graish-blue;
                 font-weight: 500;
                 font-size: 14px;
+                @include mixins.text-container-childs;
+                margin-top: 40px;
+                margin-bottom: 20px;
             }
 
             .main__card__text-container__title{
                 font-family: variables.$fraunces;
+                @include mixins.text-container-childs;
+                margin-bottom: 20px;
             }
 
             .main__card__text-container__text{
                 font-family: variables.$montserrat;
                 color: variables.$dark-graish-blue;
+                @include mixins.text-container-childs;
+                margin-bottom: 35px;
+                line-height: 25px;
             }
 
             .main__card__text-container__price{
                 font-family: variables.$fraunces;
                 color: variables.$dark-cyan;
+                @include mixins.text-container-childs;
+                font-size: 35px;
+                display: flex;
+                margin-bottom: 25px;
 
                 .main__card__text-container__price__past-price{
                     color: variables.$dark-graish-blue;
                     text-decoration: line-through;
                     font-family: variables.$montserrat;
                     font-weight: 500;
+                    font-size: 15px;
+                    position: relative;
+                    left: 20px;
+                    top: 5px;
                 }
             }
 
@@ -58,6 +75,53 @@
                 background-color: variables.$dark-cyan;
                 color: variables.$white;
                 border: 2px solid variables.$dark-cyan;
+                @include mixins.text-container-childs;
+                width: 270px;
+                border-radius: 10px;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                font-family: variables.$montserrat;
+                transition: all 1s;
+
+                &:hover{
+                    background-color: hsl(158, 36%, 27%);
+                    border: 2px solid hsl(158, 36%, 27%);
+                    cursor: pointer;
+                }
+
+                .main__card__text-container__btn__icon-cart{
+                    position: relative;
+                    right: 20px;
+                    font-size: 30px;
+
+                    &:hover{
+                        animation: icon-cart 2s forwards;
+                    }
+
+                    @keyframes icon-cart{
+                        0%{
+                            transform: rotate(0deg);
+                            font-size: 30px;
+                        }
+
+                        50%{
+                            transform: rotate(-15deg);
+                            font-size: 30px;
+                        }
+
+                        75%{
+                            transform: rotate(15deg);
+                            font-size: 30px;
+                        }
+
+                        100%{
+                            transform: rotate(0deg);
+                            font-size: 30px;
+                        }
+                    }
+                }
             }
         }
     }
