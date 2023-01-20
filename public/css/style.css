@@ -2,6 +2,9 @@
 /*Color Variables*/
 /*Font Variables*/
 /*SCSS Files*/
+/*Mixins*/
+/*Main Mixins*/
+/*SCSS Files*/
 /*Main Styles*/
 .main {
   min-height: 100vh;
@@ -16,6 +19,9 @@
   height: 500px;
   width: 350px;
   border-radius: 10px 0px 0px 10px;
+  background: url(/public/assets/img/image-product-desktop.jpg);
+  background-size: 350px 500px;
+  background-repeat: no-repeat;
 }
 .main .main__card .main__card__text-container {
   background-color: #fff;
@@ -28,28 +34,116 @@
   color: hsl(228deg, 12%, 48%);
   font-weight: 500;
   font-size: 14px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .main .main__card .main__card__text-container .main__card__text-container__title {
   font-family: "Fraunces", sans-serif;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 .main .main__card .main__card__text-container .main__card__text-container__text {
   font-family: "Montserrat", sans-serif;
   color: hsl(228deg, 12%, 48%);
+  margin-left: 40px;
+  margin-bottom: 35px;
+  line-height: 25px;
 }
 .main .main__card .main__card__text-container .main__card__text-container__price {
   font-family: "Fraunces", sans-serif;
   color: hsl(158deg, 36%, 37%);
+  margin-left: 40px;
+  font-size: 35px;
+  display: flex;
+  margin-bottom: 25px;
 }
 .main .main__card .main__card__text-container .main__card__text-container__price .main__card__text-container__price__past-price {
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  left: 20px;
+  top: 5px;
 }
 .main .main__card .main__card__text-container .main__card__text-container__btn {
   background-color: hsl(158deg, 36%, 37%);
   color: #fff;
   border: 2px solid hsl(158deg, 36%, 37%);
+  margin-left: 40px;
+  width: 270px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: all 1s;
+}
+.main .main__card .main__card__text-container .main__card__text-container__btn:hover {
+  background-color: hsl(158deg, 36%, 27%);
+  border: 2px solid hsl(158deg, 36%, 27%);
+  cursor: pointer;
+}
+.main .main__card .main__card__text-container .main__card__text-container__btn .main__card__text-container__btn__icon-cart {
+  position: relative;
+  right: 20px;
+  font-size: 30px;
+}
+.main .main__card .main__card__text-container .main__card__text-container__btn .main__card__text-container__btn__icon-cart:hover {
+  animation: icon-cart 2s forwards;
+}
+@keyframes icon-cart {
+  0% {
+    transform: rotate(0deg);
+    font-size: 30px;
+  }
+  50% {
+    transform: rotate(-15deg);
+    font-size: 30px;
+  }
+  75% {
+    transform: rotate(15deg);
+    font-size: 30px;
+  }
+  100% {
+    transform: rotate(0deg);
+    font-size: 30px;
+  }
+}
+
+/*Responsive Mobile Main Styles*/
+@media only screen and (max-width: 480px) {
+  .main .main__card {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .main .main__card .main__card__img-container {
+    margin-top: 40px;
+    height: 300px;
+    width: 200px;
+  }
+  .main .main__card .main__card__img-container .main__card__img-container__img {
+    height: 300px;
+    width: 350px;
+    background-size: 350px 400px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .main .main__card .main__card__text-container {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+/*SCSS Files*/
+/*Footer Styles*/
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer .Tux3er {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 /*SCSS File*/
@@ -61,9 +155,19 @@
 }
 
 body {
-  overflow: hidden;
   min-height: 100vh;
   background-color: hsl(30deg, 38%, 92%);
+}
+
+br {
+  display: block;
+}
+
+/*Responsive Mobile General Styles*/
+@media only screen and (max-width: 480px) {
+  br {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
