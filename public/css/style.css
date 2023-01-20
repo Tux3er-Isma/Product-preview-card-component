@@ -26,6 +26,8 @@
 .main .main__card .main__card__text-container .main__card__text-container__subtitle {
   font-family: "Montserrat", sans-serif;
   color: hsl(228deg, 12%, 48%);
+  font-weight: 500;
+  font-size: 14px;
 }
 .main .main__card .main__card__text-container .main__card__text-container__title {
   font-family: "Fraunces", sans-serif;
@@ -42,6 +44,7 @@
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 .main .main__card .main__card__text-container .main__card__text-container__btn {
   background-color: hsl(158deg, 36%, 37%);

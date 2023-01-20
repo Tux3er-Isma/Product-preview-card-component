@@ -29,6 +29,8 @@
             .main__card__text-container__subtitle{
                 font-family: variables.$montserrat;
                 color: variables.$dark-graish-blue;
+                font-weight: 500;
+                font-size: 14px;
             }
 
             .main__card__text-container__title{
@@ -48,6 +50,7 @@
                     color: variables.$dark-graish-blue;
                     text-decoration: line-through;
                     font-family: variables.$montserrat;
+                    font-weight: 500;
                 }
             }
 
