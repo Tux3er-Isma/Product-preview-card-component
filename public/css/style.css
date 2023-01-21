@@ -140,12 +140,20 @@
 .footer {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 30px;
 }
 .footer .Tux3er {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
+/*Responsive Mobile Footer Styles*/
+@media only screen and (max-width: 480px) {
+  .footer {
+    position: relative;
+  }
+}
 /*SCSS File*/
 /*General Styles*/
 * {
