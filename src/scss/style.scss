@@ -14,6 +14,7 @@
 body{
     min-height: 100vh;
     background-color: variables.$cream;
+    overflow-y: hidden;
 }
 
 br{
@@ -22,6 +23,9 @@ br{
 
 /*Responsive Mobile General Styles*/
 @media only screen and (max-width: 480px){
+    body{
+        overflow-y: scroll;
+    }
     br{
         display: none;
     }

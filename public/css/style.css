@@ -157,6 +157,7 @@
 body {
   min-height: 100vh;
   background-color: hsl(30deg, 38%, 92%);
+  overflow-y: hidden;
 }
 
 br {
@@ -165,6 +166,9 @@ br {
 
 /*Responsive Mobile General Styles*/
 @media only screen and (max-width: 480px) {
+  body {
+    overflow-y: scroll;
+  }
   br {
     display: none;
   }
